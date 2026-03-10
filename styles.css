@@ -261,245 +261,63 @@ body {
     max-width: 700px;
 }
 
-/* ---------- Animated Cactus ---------- */
+/* ---------- Animated Cactus PNG ---------- */
 .cactus-hero {
     margin: 0 auto 30px;
     display: flex;
     justify-content: center;
-}
-
-.cactus-animated {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: cactusBounce 3s ease-in-out infinite;
-}
-
-@keyframes cactusBounce {
-
-    0%,
-    100% {
-        transform: translateY(0) rotate(-2deg);
-    }
-
-    25% {
-        transform: translateY(-8px) rotate(0deg);
-    }
-
-    50% {
-        transform: translateY(0) rotate(2deg);
-    }
-
-    75% {
-        transform: translateY(-4px) rotate(0deg);
-    }
-}
-
-.cactus-trunk {
-    width: 60px;
-    height: 110px;
-    background: linear-gradient(135deg, #3CB371, #2D8B2D);
-    border-radius: 30px 30px 10px 10px;
     position: relative;
-    box-shadow: inset -8px 0 20px rgba(0, 0, 0, 0.15), 0 0 40px rgba(45, 139, 45, 0.3);
+    width: 150px;
+    height: 180px;
 }
 
-/* Trunk detail lines */
-.cactus-trunk::before {
-    content: '';
+.cactus-glow {
     position: absolute;
-    left: 50%;
-    top: 10%;
-    width: 2px;
-    height: 80%;
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateX(-50%);
-}
-
-/* Arms */
-.cactus-arm {
-    position: absolute;
-    width: 30px;
-    height: 50px;
-    background: linear-gradient(135deg, #3CB371, #2D8B2D);
-    border-radius: 20px;
-    box-shadow: inset -4px 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.cactus-arm-left {
-    left: -25px;
-    top: 25px;
-    transform-origin: right center;
-    animation: armWaveLeft 4s ease-in-out infinite;
-}
-
-.cactus-arm-left::after {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background: linear-gradient(135deg, #3CB371, #2D8B2D);
-    border-radius: 20px;
-    box-shadow: inset -4px 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.cactus-arm-right {
-    right: -25px;
-    top: 15px;
-    transform-origin: left center;
-    animation: armWaveRight 4s ease-in-out infinite;
-}
-
-.cactus-arm-right::after {
-    content: '';
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 30px;
-    height: 35px;
-    background: linear-gradient(135deg, #3CB371, #2D8B2D);
-    border-radius: 20px;
-    box-shadow: inset -4px 0 10px rgba(0, 0, 0, 0.15);
-}
-
-@keyframes armWaveLeft {
-
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(-12deg);
-    }
-}
-
-@keyframes armWaveRight {
-
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(12deg);
-    }
-}
-
-/* Flower */
-.cactus-flower {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    animation: flowerSpin 6s linear infinite;
-}
-
-.cactus-flower::before {
-    content: '🌺';
-    font-size: 22px;
-    position: absolute;
-    top: -8px;
-    left: -4px;
-}
-
-@keyframes flowerSpin {
-
-    0%,
-    100% {
-        transform: translateX(-50%) rotate(0deg) scale(1);
-    }
-
-    50% {
-        transform: translateX(-50%) rotate(180deg) scale(1.15);
-    }
-}
-
-/* Face */
-.cactus-face {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 30px;
-}
-
-.cactus-eye {
-    width: 8px;
-    height: 8px;
-    background: #1a3a1a;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    animation: blink 3.5s ease-in-out infinite;
-}
-
-.cactus-eye-left {
-    left: 5px;
-}
-
-.cactus-eye-right {
-    right: 5px;
-}
-
-@keyframes blink {
-
-    0%,
-    45%,
-    55%,
-    100% {
-        transform: scaleY(1);
-    }
-
-    50% {
-        transform: scaleY(0.1);
-    }
-}
-
-.cactus-smile {
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 16px;
-    height: 8px;
-    border-bottom: 3px solid #1a3a1a;
-    border-radius: 0 0 10px 10px;
-}
-
-/* Pot */
-.cactus-pot {
-    width: 80px;
-    height: 40px;
-    background: linear-gradient(180deg, var(--accent-terracotta), #A0522D);
-    border-radius: 5px 5px 15px 15px;
-    position: relative;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-}
-
-.cactus-pot::before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: -5px;
-    right: -5px;
-    height: 12px;
-    background: linear-gradient(180deg, var(--accent-terracotta), #C1694F);
-    border-radius: 4px;
-}
-
-.cactus-pot::after {
-    content: '🇲🇽';
-    position: absolute;
-    font-size: 16px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: var(--accent-green);
+    filter: blur(40px);
+    opacity: 0.6;
+    border-radius: 50%;
+    animation: cactusPulse 3s ease-in-out infinite alternate;
+}
+
+.cactus-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+    animation: cactusFloat 4s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes cactusFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+}
+
+@keyframes cactusPulse {
+    0% {
+        opacity: 0.4;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
 }
 
 /* ---------- Hero Title ---------- */
