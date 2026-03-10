@@ -8,7 +8,7 @@
     --bg-dark: #fcf9f2;
     /* Soft warm light background */
     --bg-card: rgba(0, 0, 0, 0.03);
-    --bg-glass: rgba(0, 0, 0, 0.85);
+    --bg-glass: rgba(255, 255, 255, 0.7);
     /* Frosty white glass */
     --text-primary: #1a1512;
     --text-secondary: rgba(26, 21, 18, 0.65);
@@ -322,6 +322,31 @@ body {
     }
 }
 
+.mascot-img {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    bottom: -15px;
+    right: -80px;
+    z-index: 2;
+    animation: mascotBob 3.5s ease-in-out infinite;
+    transform-origin: bottom center;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes mascotBob {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(5deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(-5deg);
+    }
+}
+
 /* ---------- Hero Title ---------- */
 .hero-title {
     font-size: clamp(3rem, 10vw, 6rem);
@@ -337,8 +362,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: var(--accent-gold);
-    text-shadow: 0 0 30px rgba(255, 217, 61, 0.4);
+    color: var(--accent-green);
 }
 
 .title-amigos {
@@ -587,7 +611,7 @@ body {
 }
 
 .menu-card:hover .card-glass {
-    background: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.9);
     border-color: rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
 }
@@ -683,7 +707,7 @@ body {
 }
 
 .social-card:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
     border-color: rgba(0, 0, 0, 0.2);
     transform: translateY(-2px) scale(1.01);
 }
