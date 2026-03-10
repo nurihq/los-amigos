@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Amigos | Mexican Food · Tbilisi</title>
+    <meta name="description"
+        content="Los Amigos — Tbilisi's favorite Mexican restaurant. Burritos, tacos, quesadillas & more. Order on Wolt or visit us!">
+    <meta property="og:title" content="Los Amigos | Mexican Food · Tbilisi">
+    <meta property="og:description"
+        content="Burritos, tacos, quesadillas & more — authentic Mexican flavors in Tbilisi, Georgia.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating food particles -->
+    <div class="food-particles" aria-hidden="true">
+        <div class="particle p1">🌮</div>
+        <div class="particle p2">🌯</div>
+        <div class="particle p3">🌶️</div>
+        <div class="particle p4">🫔</div>
+        <div class="particle p5">🥑</div>
+        <div class="particle p6">🌵</div>
+        <div class="particle p7">💃</div>
+        <div class="particle p8">🎸</div>
+    </div>
+
+    <!-- Language Toggle -->
+    <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">🇺🇸 <span
+            class="lang-txt">EN</span></button>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <div class="hero-orb orb-1"></div>
+                <div class="hero-orb orb-2"></div>
+                <div class="hero-orb orb-3"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="cactus-hero" aria-hidden="true">
+                    <div class="cactus-animated">
+                        <div class="cactus-trunk">
+                            <div class="cactus-arm cactus-arm-left"></div>
+                            <div class="cactus-arm cactus-arm-right"></div>
+                            <div class="cactus-flower"></div>
+                            <div class="cactus-face">
+                                <div class="cactus-eye cactus-eye-left"></div>
+                                <div class="cactus-eye cactus-eye-right"></div>
+                                <div class="cactus-smile"></div>
+                            </div>
+                        </div>
+                        <div class="cactus-pot"></div>
+                    </div>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-los">Los</span>
+                    <span class="title-amigos">Amigos</span>
+                </h1>
+                <p class="hero-tagline" data-ka="მექსიკური სამზარეულო თბილისში" data-en="Mexican Kitchen in Tbilisi">
+                    მექსიკური სამზარეულო თბილისში</p>
+                <p class="hero-desc" data-ka="ბურიტო · ტაკო · კესადია · ბურგერი · და ბევრი სხვა"
+                    data-en="Burritos · Tacos · Quesadillas · Burgers · & much more">ბურიტო · ტაკო · კესადია ·
+                    ბურგერი · და ბევრი სხვა</p>
+
+                <div class="hero-info-pills">
+                    <div class="info-pill">
+                        <span class="pill-icon">📍</span>
+                        <span data-ka="ტაქტაქიშვილი 3/43, თბილისი" data-en="Taktakishvili 3/43, Tbilisi">ტაქტაქიშვილი
+                            3/43, თბილისი</span>
+                    </div>
+                    <div class="info-pill">
+                        <span class="pill-icon">📞</span>
+                        <span><a href="tel:+995522220017" style="color:inherit;text-decoration:none">+995 522 220
+                                017</a></span>
+                    </div>
+                </div>
+
+                <div class="scroll-hint">
+                    <div class="scroll-mouse">
+                        <div class="scroll-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Strip -->
+        <section class="feature-strip">
+            <div class="strip-track">
+                <div class="strip-item">
+                    <span class="strip-icon">🌯</span>
+                    <span data-ka="ბურიტო" data-en="Burritos">ბურიტო</span>
+                </div>
+                <div class="strip-dot">·</div>
+                <div class="strip-item">
+                    <span class="strip-icon">🌮</span>
+                    <span data-ka="ტაკო" data-en="Tacos">ტაკო</span>
+                </div>
+                <div class="strip-dot">·</div>
+                <div class="strip-item">
+                    <span class="strip-icon">🧀</span>
+                    <span data-ka="კესადია" data-en="Quesadillas">კესადია</span>
+                </div>
+                <div class="strip-dot">·</div>
+                <div class="strip-item">
+                    <span class="strip-icon">🍔</span>
+                    <span data-ka="ბურგერი" data-en="Burgers">ბურგერი</span>
+                </div>
+                <div class="strip-dot">·</div>
+                <div class="strip-item">
+                    <span class="strip-icon">🥑</span>
+                    <span data-ka="გუაკამოლე" data-en="Guacamole">გუაკამოლე</span>
+                </div>
+                <div class="strip-dot">·</div>
+                <div class="strip-item">
+                    <span class="strip-icon">🌶️</span>
+                    <span data-ka="ჩილი კონ კარნე" data-en="Chili Con Carne">ჩილი კონ კარნე</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">
+                <span data-ka="პოპულარული" data-en="Popular">პოპულარული</span>
+                <span class="text-gradient" data-ka="არჩევანი" data-en="Picks">არჩევანი</span>
+            </h2>
+            <p class="section-sub" data-ka="ჩვენი ყველაზე შეკვეთილი კერძები — შეკვეთე Wolt-ით"
+                data-en="Our most ordered dishes — order on Wolt">ჩვენი ყველაზე შეკვეთილი კერძები — შეკვეთე
+                Wolt-ით</p>
+
+            <div class="menu-grid">
+                <!-- California Combo -->
+                <a href="https://wolt.com/ka/geo/tbilisi/restaurant/los-amigos" target="_blank" rel="noopener"
+                    class="menu-card">
+                    <div class="card-glow combo-glow"></div>
+                    <div class="card-glass">
+                        <div class="card-emoji">🌯🍟🥤</div>
+                        <div class="card-content">
+                            <h3 data-ka="California Combo" data-en="California Combo">California Combo</h3>
+                            <p class="card-desc" data-ka="ბურიტო + კარტოფილი + სოუსი + სასმელი"
+                                data-en="Burrito + fries + sauce + drink">ბურიტო + კარტოფილი + სოუსი + სასმელი</p>
+                            <span class="card-price">35.70 ₾</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- California Burrito -->
+                <a href="https://wolt.com/ka/geo/tbilisi/restaurant/los-amigos" target="_blank" rel="noopener"
+                    class="menu-card">
+                    <div class="card-glow burrito-glow"></div>
+                    <div class="card-glass">
+                        <div class="card-emoji">🌯</div>
+                        <div class="card-content">
+                            <h3 data-ka="კალიფორნია ბურიტო" data-en="California Burrito">კალიფორნია ბურიტო</h3>
+                            <p class="card-desc" data-ka="ტორტილა, გაუდა, ქათამი, სალსა, ფრი, სპეც სოუსი"
+                                data-en="Tortilla, gouda, chicken, salsa, fries, special sauce">ტორტილა, გაუდა,
+                                ქათამი, სალსა, ფრი, სპეც სოუსი</p>
+                            <span class="card-price">22.50 ₾</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Los Amigos Quesadilla -->
+                <a href="https://wolt.com/ka/geo/tbilisi/restaurant/los-amigos" target="_blank" rel="noopener"
+                    class="menu-card">
+                    <div class="card-glow quesadilla-glow"></div>
+                    <div class="card-glass">
+                        <div class="card-emoji">🧀🌮</div>
+                        <div class="card-content">
+                            <h3 data-ka="ლოს ამიგოს კესადია" data-en="Los Amigos Quesadilla">ლოს ამიგოს კესადია
+                            </h3>
+                            <p class="card-desc" data-ka="ტორტილა, ქათმის მარინადი, ყველი, ჩიპოტლე"
+                                data-en="Tortilla, chicken marinade, cheese, chipotle">ტორტილა, ქათმის მარინადი,
+                                ყველი, ჩიპოტლე</p>
+                            <span class="card-price">19.50 ₾</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Social Links -->
+        <section class="socials-section" id="socials">
+            <h2 class="section-title">
+                <span data-ka="დაგვიკავშირდით" data-en="Connect With Us">დაგვიკავშირდით</span>
+            </h2>
+            <div class="socials-grid">
+                <a href="https://wolt.com/ka/geo/tbilisi/restaurant/los-amigos" target="_blank" rel="noopener"
+                    class="social-card wolt-card">
+                    <div class="social-icon">
+                        <span class="social-emoji">🛵</span>
+                    </div>
+                    <div class="social-info">
+                        <strong>Wolt</strong>
+                        <span data-ka="შეკვეთა Wolt-ზე" data-en="Order on Wolt">შეკვეთა Wolt-ზე</span>
+                    </div>
+                    <span class="social-arrow">↗</span>
+                </a>
+
+                <a href="https://los-amigos-tbilisi.menu-world.com/" target="_blank" rel="noopener"
+                    class="social-card menu-card-link">
+                    <div class="social-icon">
+                        <span class="social-emoji">📋</span>
+                    </div>
+                    <div class="social-info">
+                        <strong data-ka="მენიუ" data-en="Menu">მენიუ</strong>
+                        <span data-ka="სრული მენიუ" data-en="Full Menu">სრული მენიუ</span>
+                    </div>
+                    <span class="social-arrow">↗</span>
+                </a>
+
+                <a href="https://www.instagram.com/losamigos.tbilisi/" target="_blank" rel="noopener"
+                    class="social-card instagram-card">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </div>
+                    <div class="social-info">
+                        <strong>Instagram</strong>
+                        <span data-ka="გამოგვყევით Instagram-ზე" data-en="Follow us on Instagram">გამოგვყევით
+                            Instagram-ზე</span>
+                    </div>
+                    <span class="social-arrow">↗</span>
+                </a>
+
+                <a href="https://www.facebook.com/p/Los-Amigos-%E1%83%9A%E1%83%9D%E1%83%A1-%E1%83%90%E1%83%9B%E1%83%98%E1%83%92%E1%83%9D%E1%83%A1-100071138767337/"
+                    target="_blank" rel="noopener" class="social-card facebook-card">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </div>
+                    <div class="social-info">
+                        <strong>Facebook</strong>
+                        <span data-ka="მოგვიწონეთ Facebook-ზე" data-en="Like us on Facebook">მოგვიწონეთ
+                            Facebook-ზე</span>
+                    </div>
+                    <span class="social-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section" id="location">
+            <h2 class="section-title">
+                <span data-ka="სად" data-en="Where to">სად</span>
+                <span class="text-gradient" data-ka="გვიპოვით" data-en="Find Us">გვიპოვით</span>
+            </h2>
+            <div class="map-card">
+                <div class="map-info">
+                    <div class="map-address">
+                        <span class="map-pin">📍</span>
+                        <div>
+                            <strong data-ka="ტაქტაქიშვილი 3/43" data-en="Taktakishvili 3/43">ტაქტაქიშვილი 3/43</strong>
+                            <span data-ka="0179 თბილისი, საქართველო" data-en="0179 Tbilisi, Georgia">0179 თბილისი,
+                                საქართველო</span>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=41.70906182,44.7647606" target="_blank" rel="noopener"
+                        class="map-directions-btn" data-ka="მიმართულებები ↗" data-en="Directions ↗">მიმართულებები ↗</a>
+                </div>
+                <div class="map-embed">
+                    <iframe
+                        src="https://maps.google.com/maps?q=41.70906182,44.7647606&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Los Amigos location on Google Maps"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <svg class="nuri-icon" width="24" height="24" viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M32 8 C12 8 4 20 4 36 C4 52 14 60 28 60 C32 60 36 56 36 52 C36 48 40 44 44 44 C48 44 52 48 52 52 C52 56 56 60 60 60 C60 60 60 40 60 36 C60 20 52 8 32 8 Z"
+                            fill="#E0F0FF" stroke="currentColor" stroke-width="4" stroke-linejoin="round" />
+                        <circle cx="20" cy="36" r="5" fill="#FF5252" stroke="currentColor" stroke-width="3" />
+                        <circle cx="26" cy="22" r="5" fill="#4CAF50" stroke="currentColor" stroke-width="3" />
+                        <circle cx="42" cy="18" r="5" fill="#2196F3" stroke="currentColor" stroke-width="3" />
+                        <circle cx="20" cy="50" r="5" fill="#FFC107" stroke="currentColor" stroke-width="3" />
+                    </svg>
+                </div>
+                <p class="footer-copy">
+                    <span data-ka="შექმნილია 🌮-ით" data-en="Built with 🌮 by">შექმნილია 🌮-ით</span>
+                    <a href="https://nuri.software" target="_blank" rel="noopener">Nuri</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Language Toggle
+        const langBtn = document.getElementById('lang-toggle');
+        const allTranslatable = document.querySelectorAll('[data-ka]');
+
+        // Default to Georgian
+        let currentLang = localStorage.getItem('la_lang') || 'ka';
+
+        function updateLanguage() {
+            const isEn = currentLang === 'en';
+            langBtn.innerHTML = isEn
+                ? '🇬🇪 <span class="lang-txt">KA</span>'
+                : '🇺🇸 <span class="lang-txt">EN</span>';
+
+            allTranslatable.forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) el.textContent = text;
+            });
+
+            document.documentElement.lang = currentLang;
+            localStorage.setItem('la_lang', currentLang);
+        }
+
+        langBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'ka' : 'en';
+            updateLanguage();
+        });
+
+        updateLanguage();
+
+        // Scroll reveal
+        const revealEls = document.querySelectorAll('.menu-card, .social-card, .map-card, .section-title, .section-sub, .feature-strip');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        revealEls.forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
